@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class ZombieBridgeCode
 {
  private int professor = 10;
@@ -6,6 +7,7 @@ public class ZombieBridgeCode
  private int janitor = 5; 
  public static void main(String[] args)
  {
+   Scanner scan = new Scanner(System.in);
    System.out.println("Hi. This is the Zombie Bridge Riddle Helper"); 
    System.out.println("You (Y) - 1 min"); 
    System.out.println("Assistant (A) - 2 min"); 
