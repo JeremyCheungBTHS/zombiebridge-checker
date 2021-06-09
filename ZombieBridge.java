@@ -6,9 +6,17 @@ public class ZombieBridge
  private int janitor = 5; 
  private int professor = 10;
  private int timeLeft; 
+ private ArrayList<String> charsAtBegin;
+ private ArrayList<String> charsAtEnd;
  public ZombieBridge(int time)
  {
    timeLeft = time; 
+   charsAtBegin = new ArrayList<String>(); 
+   charsAtBegin.add("Y");
+   charsAtBegin.add("A");
+   charsAtBegin.add("J");
+   charsAtBegin.add("P");
+   charsAtEnd = new ArrayList<String>(); 
  }
  public int getTimeLeft()
  {
@@ -76,8 +84,6 @@ public class ZombieBridge
    ZombieBridge x = new ZombieBridge(17); 
    String[] charctersSent = {"", ""}; 
    String characterSentBack; 
-   String[] charsAtBegin = {};
-   String[] charsAtEnd + {};
    Scanner scan = new Scanner(System.in);
    System.out.println("Hi. This is the Zombie Bridge Riddle Helper"); 
    System.out.println("You (Y) - 1 min"); 
