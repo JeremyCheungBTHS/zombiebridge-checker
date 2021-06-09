@@ -26,6 +26,14 @@ public class ZombieBridge
  {
    timeLeft -= num; 
  }
+ public ArrayList getCharsAtBegin()
+ {
+  return charsAtBegin;
+ }
+ public ArrayList getCharsAtEnd()
+ {
+  return charsAtEnd;
+ }
  public void go(String[] chars)
  {
   int x = 0;
