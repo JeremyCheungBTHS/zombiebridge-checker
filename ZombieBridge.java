@@ -34,18 +34,26 @@ public class ZombieBridge
    if (y.equals("Y"))
    {
      x += 1; 
+     charsAtBegin.remove(new String("Y")); 
+     charsAtEnd.add("Y"); 
    }
    else if (y.equals("A"))
    {
     x += 2;
+    charsAtBegin.remove(new String("A")); 
+    charsAtEnd.add("A"); 
    }
    else if (y.equals("J"))
    {
     x += 5;
+    charsAtBegin.remove(new String("J")); 
+    charsAtEnd.add("J"); 
    }
    else if (y.equals("P"))
    {
     x += 10;
+    charsAtBegin.remove(new String("P")); 
+    charsAtEnd.add("P"); 
    }
   }
   subtractTimeLeft(x); 
@@ -60,18 +68,26 @@ public class ZombieBridge
   if (y.equals("Y"))
   {
     x += 1; 
+    charsAtEnd.remove(new String("Y")); 
+    charsAtBegin.add("Y");
   }
   else if (y.equals("A"))
   {
    x += 2;
+   charsAtEnd.remove(new String("A")); 
+   charsAtBegin.add("A");
   }
   else if (y.equals("J"))
   {
    x += 5;
+   charsAtEnd.remove(new String("J")); 
+   charsAtBegin.add("J");
   }
   else if (y.equals("P"))
   {
    x += 10;
+   charsAtEnd.remove(new String("P")); 
+   charsAtBegin.add("P");
   }
   subtractTimeLeft(x); 
   if (this.getTimeLeft() < 0)
