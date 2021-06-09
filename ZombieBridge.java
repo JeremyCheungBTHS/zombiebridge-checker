@@ -94,6 +94,7 @@ public class ZombieBridge
     System.out.print("Who do you send back? "); 
     characterSentBack = scan.nextString(); 
     x.back(characterSentBack);
+    System.out.println("You have " + timeLeft + " minutes remaining."); 
     if (x.getTimeLeft() < 0)
     {
       break; 
@@ -101,6 +102,16 @@ public class ZombieBridge
     System.out.print("Who do you send next? "); 
     charactersSent[0] = scan.nextString().substring(0,1);
     charactersSent[1] = scan.nextString().substring(1);
+    x.go(charactersSent); 
+    System.out.println("You have " + timeLeft + " minutes remaining."); 
+   }
+   if (x.getTimeLeft() < 0)
+   {
+    System.out.println("You Failed!");
+   }
+   else
+   {
+    System.out.println("Congratulations! You got everybody out safely!");
    }
  }
 }
